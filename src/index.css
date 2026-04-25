@@ -1,1 +1,62 @@
 @import "tailwindcss";
+@theme {
+    /* Primary / Secondary Colors */
+    --color-primary: #c96442;
+    /* Terracotta Brand */
+    --color-secondary: #e8e6dc;
+    /* Warm Sand */
+    --color-success: #6b7a65;
+    /* Muted Green */
+    --color-error: #b53333;
+    /* Error Crimson */
+    --color-bg: #f5f4ed;
+    /* Parchment */
+    --color-card: #faf9f5;
+    /* Ivory */
+
+    /* Additional Claude Colors */
+    --color-near-black: #141413;
+    --color-dark-surface: #30302e;
+    --color-olive-gray: #5e5d59;
+    --color-stone-gray: #87867f;
+    --color-ring-warm: #d1cfc5;
+
+    /* Typography */
+    --font-family-sans: "Anthropic Sans", Arial, sans-serif;
+    --font-family-heading: "Anthropic Serif", Georgia, serif;
+    --font-family-mono: "Anthropic Mono", Arial, monospace;
+
+    /* Border Radius */
+    --radius-card: 8px;
+    /* comfortably rounded */
+    --radius-input: 12px;
+    /* generously rounded */
+    --radius-btn: 8px;
+    /* comfortably rounded */
+    --radius-hero: 32px;
+    /* maximum rounded */
+
+    /* Shadows */
+    --shadow-card: 0px 4px 24px rgba(0, 0, 0, 0.05);
+    /* whisper shadow */
+    --shadow-ring: 0px 0px 0px 1px var(--color-ring-warm);
+}
+
+@layer base {
+    body {
+        background-color: var(--color-bg);
+        color: var(--color-near-black);
+        font-family: var(--font-family-sans);
+        line-height: 1.60;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-family-heading);
+        font-weight: 500;
+    }
+}
